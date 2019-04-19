@@ -1,0 +1,152 @@
+body {
+    background-color: #E9ECEE;
+    font-family: varela round;
+}
+
+header {
+    background-color: #fff;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 20px 0;
+    box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+}
+
+.navLeft span {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.navRight {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.navRight ul {
+    list-style: none;
+    margin: 0;
+}
+
+.navRight ul li {
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.navRight ul li a {
+    font-size: 18px;
+    color: #333;
+    transition: .3s all;
+}
+
+.navRight ul li a:hover {
+    color: #fc8019;
+    transition: .3s all;
+}
+
+.navRight ul li a .svg1 {
+    transition: .3s all;
+}
+
+.navRight ul li a:hover .svg1 {
+    transition: .3s all;
+    fill: #fc8019 !important;
+}
+
+#first .col-5 {
+    background-color: #fff;
+    cursor: grab;
+}
+
+.main p {
+    font-weight: 500;
+    margin-top: 10px;
+    color: #60B246 !important;
+    font-size: 20px !important;
+}
+
+.col-5 {
+    height: 290px;
+}
+
+
+#second {
+    background-color: #fff;
+    height: 100%;
+}
+
+#div1 {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #aaaaaa;
+    /*    line-height: 200px;*/
+    padding: 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+.text-center p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
+/*bill part*/
+
+.bill p {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+
+.bill p:nth-of-type(1) {
+    font-weight: 600;
+}
+
+.border {
+    height: .5px;
+    width: 100%;    
+    background-color: #e9e9eb;
+    margin: 20px 0;
+}
+
+.border:nth-of-type(2){
+    height: 4px;
+    background-color: #333;
+}
+
+
+.bill p:not(:nth-of-type(1)) {
+    color: #686b78;
+}
+
+/*order menu*/
+
+.orderLeft span{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
