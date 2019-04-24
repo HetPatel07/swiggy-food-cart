@@ -10,10 +10,18 @@ function drag(ev) {
 function drop(ev, t) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
+
     ev.target.appendChild(document.getElementById(data));
+    console.log(t.lastElementChild);
+
+    if (t.lastElementChild.getAttribute('data-class') == 'vadapav') {
+        document.getElementsByClassName('vadapav')[0].style.display = "flex";
+        t.lastElementChild.style.display="none";
+    }
+    //    
+
     if (t.parentElement.getAttribute('id') == 'second') {
-        console.log(t.childNodes);
-        t.childNodes[5].childNodes[3].setAttribute('class', 'price');
+        t.lastElementChild.childNodes[3].setAttribute('class', 'price');
         document.getElementById('payMain').setAttribute('data-tog', '1');
     } else {
         console.log(t.childNodes);
@@ -31,7 +39,6 @@ function calc() {
     for (var i = 0; i < document.getElementsByClassName('price').length; i++) {
         price[i] = document.getElementsByClassName('price')[i].innerHTML;
 
-        console.log(price[i]);
         price[i] = parseInt(price[i]);
 
         a = a + price[i];

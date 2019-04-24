@@ -55,9 +55,9 @@
                 <div class="col-8">
                     <div class="row p-5" id="first" style="justify-content: space-evenly">
                         <div class="col-5" ondrop="drop(event,this)" ondragover="allowDrop(event)">
-                            <div class="main text-center align-items-center" id="drag1" draggable="true" ondragstart="drag(event)">
-                                <img src="img/vada-pav-recipe-1.jpg" height="200px" width="250px" alt="" class="mt-4">
-                                <p class="">20.00 rs</p>
+                            <div class="main text-center align-items-center"  data-class="vadapav" id="drag1" draggable="true" ondragstart="drag(event)">
+                                <img src="img/2999.webp" height="200px" width="250px" alt="" class="mt-4">
+                                <p class="">120.00 rs</p>
                             </div>
                         </div>
 
@@ -73,15 +73,32 @@
                 <div class="col-4">
                     <div class="row align-items-center justify-content-center my-5" id="second">
                         <div class="col-10" id="div1" ondrop="drop(event,this)" ondragover="allowDrop(event)">
-<!--
-                            <div class="order text-left">
+                            <div class="order vadapav text-left">
                                 <div class="orderLeft ">
-                                    <span><img src="img/vegetarian-food-symbol.png" alt="" height="20px"></span>
-                                    <span>Pizza (6")</span>
+                                    <div class="orderLeftMain">
+                                        <span style="flex-basis: 20%"><img src="img/vegetarian-food-symbol.png" alt="" height="20px"></span>
+                                        <span>Pizza Sub(6")</span>
+                                    </div>
                                 </div>
-                                .orderRight
+                                <div class="orderRight">
+                                    <div class="quntityPrice">
+                                        <span>
+                                            ₹ 120
+                                        </span>
+                                    </div>
+                                    <div class="quantity d-flex align-items-center mr-3">
+                                        <span>
+                                            <button><i class="fas fa-minus"></i></button>
+                                        </span>
+                                        <span>
+                                            1
+                                        </span>
+
+                                        <span><button><i class="fas fa-plus"></i></button></span>
+                                    </div>
+
+                                </div>
                             </div>
--->
                             <div class="bill">
                                 <p>Bill Details</p>
                                 <p class="w-100">Item Total <span id="result" class="float-right">00</span>

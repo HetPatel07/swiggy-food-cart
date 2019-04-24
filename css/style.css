@@ -117,12 +117,12 @@ header {
 
 .border {
     height: .5px;
-    width: 100%;    
+    width: 100%;
     background-color: #e9e9eb;
     margin: 20px 0;
 }
 
-.border:nth-of-type(2){
+.border:nth-of-type(2) {
     height: 4px;
     background-color: #333;
 }
@@ -133,20 +133,74 @@ header {
 }
 
 /*order menu*/
+.order {
+    display: flex;
+    overflow: auto;
+}
 
-.orderLeft span{
+.vadapav{
+    display: none;
+}
+
+.orderLeft {
+    flex-basis: 50%;
+}
+
+.orderRight {
+    flex-basis: 50%;
+}
+
+.orderRight .quantity {
+    float: right;
+}
+
+.orderLeft span {
     font-size: 16px;
 }
 
+.orderLeftMain {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
 
+/*quatiy btn part*/
+.quantity {
+    padding: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    border: 1px solid #d4d5d9;
+    display: inline-block;
+}
 
+.quantity span:nth-of-type(1) button{
+    color: lightgrey;
+}
 
+.quantity span:nth-of-type(2) {
+    padding: 0 8px;
+    color: #60b246;
+}
 
+.quantity span:nth-of-type(3) button{
+    color: #60b246;
+}
 
+.quantity span button {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
 
-
-
-
-
-
-
+.quntityPrice{
+    font-size: 14px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+}
