@@ -83,7 +83,7 @@ header {
     height: 100%;
     padding: 10px;
     background-color: #fff;
-    border: 1px solid #aaaaaa;
+/*    border: 1px solid #aaaaaa;*/
     /*    line-height: 200px;*/
     padding: 0;
     text-align: center;
@@ -133,12 +133,13 @@ header {
 }
 
 /*order menu*/
-.order {
+.vadapav,.dabeli {
     display: flex;
     overflow: auto;
+    padding: 15px 0;
 }
 
-.vadapav{
+.vadapav,.dabeli{
     display: none;
 }
 

@@ -55,14 +55,14 @@
                 <div class="col-8">
                     <div class="row p-5" id="first" style="justify-content: space-evenly">
                         <div class="col-5" ondrop="drop(event,this)" ondragover="allowDrop(event)">
-                            <div class="main text-center align-items-center"  data-class="vadapav" id="drag1" draggable="true" ondragstart="drag(event)">
+                            <div class="main text-center align-items-center" data-class="pizza" id="drag1" draggable="true" ondragstart="drag(event)">
                                 <img src="img/2999.webp" height="200px" width="250px" alt="" class="mt-4">
                                 <p class="">120.00 rs</p>
                             </div>
                         </div>
 
                         <div class="col-5" ondrop="drop(event,this)" ondragover="allowDrop(event)">
-                            <div class="main text-center" id="drag2" draggable="true" ondragstart="drag(event)">
+                            <div class="main text-center" id="drag2" data-class="dabeli" draggable="true" ondragstart="drag(event)">
                                 <img src="img/download%20(1).jfif" height="200px" width="250px" alt="" class="mt-4">
                                 <p>40.00 rs</p>
                             </div>
@@ -73,33 +73,66 @@
                 <div class="col-4">
                     <div class="row align-items-center justify-content-center my-5" id="second">
                         <div class="col-10" id="div1" ondrop="drop(event,this)" ondragover="allowDrop(event)">
-                            <div class="order vadapav text-left">
-                                <div class="orderLeft ">
-                                    <div class="orderLeftMain">
-                                        <span style="flex-basis: 20%"><img src="img/vegetarian-food-symbol.png" alt="" height="20px"></span>
-                                        <span>Pizza Sub(6")</span>
+                            <div class="order text-left">
+                                <div class="vadapav">
+                                    <div class="orderLeft ">
+                                        <div class="orderLeftMain">
+                                            <span style="flex-basis: 20%"><img src="img/vegetarian-food-symbol.png" alt="" height="20px"></span>
+                                            <span>Pizza Sub(6")</span>
+                                        </div>
+                                    </div>
+                                    <div class="orderRight">
+                                        <div class="quntityPrice">
+                                            <span>
+                                                ₹ 120
+                                            </span>
+                                        </div>
+                                        <div class="quantity d-flex align-items-center mr-3">
+                                            <span>
+                                                <button onclick="minus(this)"><i class="fas fa-minus"></i></button>
+                                            </span>
+                                            <span id="quantity">
+                                                1
+                                            </span>
+
+                                            <span><button onclick="plus(this)"><i class="fas fa-plus"></i></button></span>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="orderRight">
-                                    <div class="quntityPrice">
-                                        <span>
-                                            ₹ 120
-                                        </span>
-                                    </div>
-                                    <div class="quantity d-flex align-items-center mr-3">
-                                        <span>
-                                            <button><i class="fas fa-minus"></i></button>
-                                        </span>
-                                        <span>
-                                            1
-                                        </span>
 
-                                        <span><button><i class="fas fa-plus"></i></button></span>
+                                <!--                                dabeli-->
+                                <div class="dabeli">
+                                    <div class="orderLeft ">
+                                        <div class="orderLeftMain">
+                                            <span style="flex-basis: 20%"><img src="img/vegetarian-food-symbol.png" alt="" height="20px"></span>
+                                            <span>Dabeli</span>
+                                        </div>
                                     </div>
+                                    <div class="orderRight">
+                                        <div class="quntityPrice">
+                                            <span>
+                                                ₹ 40
+                                            </span>
+                                        </div>
+                                        <div class="quantity d-flex align-items-center mr-3">
+                                            <span>
+                                                <button onclick="minus(this)"><i class="fas fa-minus"></i></button>
+                                            </span>
+                                            <span>
+                                                1
+                                            </span>
 
+                                            <span><button onclick="plus(this)"><i class="fas fa-plus"></i></button></span>
+                                        </div>
+
+                                    </div>
                                 </div>
+
+
                             </div>
-                            <div class="bill">
+
+                            <div class="bill py-5">
                                 <p>Bill Details</p>
                                 <p class="w-100">Item Total <span id="result" class="float-right">00</span>
                                     <span class="float-right">₹</span></p>
